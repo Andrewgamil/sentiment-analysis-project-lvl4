@@ -49,3 +49,5 @@ if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]; then
     export GIT_AUTHOR_DATE="2025-03-22T22:00:00+02:00"
 fi
 ' -- --all
+
+
