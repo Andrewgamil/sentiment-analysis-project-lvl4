@@ -37,17 +37,4 @@ print("Test Loss:", evl[0], "Test Accuracy:", evl[1])
 
 
 
-git filter-branch --env-filter '
-OLD_EMAIL="andrewgamil18@gmail.com"
-
-if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]; then
-
-    export GIT_COMMITTER_DATE="2025-03-22T22:00:00+02:00"
-fi
-if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]; then
-
-    export GIT_AUTHOR_DATE="2025-03-22T22:00:00+02:00"
-fi
-' -- --all
-
 
